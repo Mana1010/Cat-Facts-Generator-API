@@ -1,0 +1,67 @@
+@import 'inventory';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: $font;
+}
+body{
+   background-color: rgb(112, 152, 156);
+}
+
+.main{
+    @include flexGroup();
+    height: 100vh;
+.inner{
+    background-color: $forbg;
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+    position: relative;
+> header{
+    display: flex;
+   align-items: center;
+   padding: 20px;
+   background-color: darken($color: rgb(66, 76, 81), $amount: 5%);
+   border-radius: 10px;
+.con{
+    color: rgb(247, 165, 160);
+    margin-inline-start: 5px;
+}
+}
+.text-sec{
+    margin: 30px 30px 0 30px;
+.para{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.text{
+    font-size: 15px;
+    color: yellow;
+    text-align: center;
+    margin-top: 5px;
+}
+> button{
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color:transparent;
+    border: 2px solid pink;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 155px; 
+&:hover{
+    background-color: rgb(247, 165, 160);
+    color: black;
+    border: none;
+    font-weight: 700;
+}
+}
+}
+}
+}
